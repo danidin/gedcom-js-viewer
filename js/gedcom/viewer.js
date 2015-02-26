@@ -54,13 +54,15 @@ GedcomViewer.prototype = {
 	 *          identifier de l'element HTML où effectuer le rendu
 	 */
 	initialize : function() {
+		/*
 		this.canvas = $(GedcomConst.id.CANVAS_ID);
 		this.history = $(GedcomConst.id.HISTORY_ID);
 		this.detail = $(GedcomConst.id.DETAIL_ID);
 		this.content = $(GedcomConst.id.CONTENT_ID);
 		this.history.hide();
 		this.detail.hide();
-
+		*/
+		
 		GedcomPlugins.setRequired("familles");
 		GedcomPlugins.setRequired("familleParent");
 		GedcomPlugins.setRequired("sexe");
