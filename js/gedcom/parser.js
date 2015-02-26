@@ -89,7 +89,7 @@ GedcomParser.prototype = {
 				}, this);
 
 		// analyze
-		this.analyze(data);
+		return this.analyze(data);
 	},
 
 	extract : function(line, i) {
@@ -174,10 +174,13 @@ GedcomParser.prototype = {
 					}
 				}, this);
 
-		GedcomIHM.fillQuickValues(options);
+		//GedcomIHM.fillQuickValues(options);
 
-		GedcomToolbox.show();
-
+		//GedcomToolbox.show();
+		return {
+			data: data, 
+			options: options
+		};
 	}
 };
 
